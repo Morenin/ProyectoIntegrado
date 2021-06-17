@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="ProyectoFormacionPractica" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonChanged" destination="bC6-0y-yQn" id="Rif-cN-UZ6"/>
+                <outlet property="buttonEdit" destination="iBq-Uh-0dR" id="e5b-p6-mKh"/>
+                <outlet property="buttonExit" destination="rrE-K6-g4c" id="TCg-8V-OMk"/>
+                <outlet property="buttonNoti" destination="bNa-Gl-aQy" id="Y0d-tX-1Fc"/>
+                <outlet property="titleLabel" destination="Jq9-iX-tDL" id="Apz-M3-BsT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewExtra" destination="6hc-p2-t0r" id="KEs-Vz-J9l"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1gE-J0-QtS">
+                    <rect key="frame" x="20" y="44" width="374" height="818"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Configuracion del Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jq9-iX-tDL">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="250"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="250" id="FJy-IM-kEV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNa-Gl-aQy">
+                            <rect key="frame" x="0.0" y="280" width="374" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="ik1-iD-WLg"/>
+                            </constraints>
+                            <state key="normal" title="Notificaciones"/>
+                            <connections>
+                                <action selector="buttonActionNoti:" destination="-1" eventType="touchUpInside" id="0Ce-oJ-9jG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBq-Uh-0dR">
+                            <rect key="frame" x="0.0" y="360" width="374" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="HYN-PN-lDV"/>
+                            </constraints>
+                            <state key="normal" title="Editar Perfil"/>
+                            <connections>
+                                <action selector="buttonActionEdit:" destination="-1" eventType="touchUpInside" id="7Pa-sN-aiW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bC6-0y-yQn">
+                            <rect key="frame" x="0.0" y="440" width="374" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="IVK-i1-31C"/>
+                            </constraints>
+                            <state key="normal" title="Cambiar Contraseña"/>
+                            <connections>
+                                <action selector="buttonActionChanged:" destination="-1" eventType="touchUpInside" id="r3B-2L-hUh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrE-K6-g4c">
+                            <rect key="frame" x="0.0" y="520" width="374" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="4b6-9C-yXY"/>
+                            </constraints>
+                            <state key="normal" title="Cerrar Sesion"/>
+                            <connections>
+                                <action selector="buttonActionExit:" destination="-1" eventType="touchUpInside" id="FnQ-yU-dR8"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hc-p2-t0r">
+                            <rect key="frame" x="0.0" y="600" width="374" height="218"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1gE-J0-QtS" secondAttribute="bottom" id="8hh-91-E5E"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1gE-J0-QtS" secondAttribute="trailing" constant="20" id="Hwu-Ff-3vG"/>
+                <constraint firstItem="1gE-J0-QtS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="pKP-C0-hNa"/>
+                <constraint firstItem="1gE-J0-QtS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="uaA-UK-ARu"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="47"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
